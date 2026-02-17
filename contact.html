@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+<body class="contact">
+  <div id="nav"></div>
+
+
+  <main>
+
+    <div id="page-contact" class="page">
+      <section class="pt-32 pb-16 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <span
+            class="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-sm font-medium mb-6"
+          >
+            <span
+              class="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse"
+            ></span>
+            Contact
+          </span>
+          <h1 class="text-5xl md:text-6xl font-black text-white mb-6">
+            Parlons de votre <span class="gradient-text">projet</span>
+          </h1>
+          <p class="text-xl text-slate-400 max-w-2xl">
+            Une idée, un projet, une question ? Nous sommes là pour vous
+            accompagner.
+          </p>
+        </div>
+      </section>
+
+      <section class="py-16 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="grid lg:grid-cols-5 gap-16">
+            <div class="lg:col-span-3">
+              <div
+                class="p-8 md:p-12 bg-slate-950/50 rounded-3xl border border-white/5"
+              >
+                <h2 class="text-3xl font-black text-white mb-8">
+                  Demande de devis
+                </h2>
+                <div id="contactForm" class="space-y-6">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label
+                        class="block text-slate-400 text-sm font-medium mb-2"
+                        >Nom complet *</label
+                      >
+                      <input
+                        type="text"
+                        id="formName"
+                        class="w-full px-5 py-4 bg-slate-900 border border-white/10 rounded-2xl text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none"
+                        placeholder="Votre nom"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-slate-400 text-sm font-medium mb-2"
+                        >Email *</label
+                      >
+                      <input
+                        type="email"
+                        id="formEmail"
+                        class="w-full px-5 py-4 bg-slate-900 border border-white/10 rounded-2xl text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none"
+                        placeholder="votre@email.com"
+                      />
+                    </div>
+                  </div>
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label
+                        class="block text-slate-400 text-sm font-medium mb-2"
+                        >Téléphone</label
+                      >
+                      <input
+                        type="tel"
+                        id="formPhone"
+                        class="w-full px-5 py-4 bg-slate-900 border border-white/10 rounded-2xl text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none"
+                        placeholder="06 XX XX XX XX"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-slate-400 text-sm font-medium mb-2"
+                        >Type de projet</label
+                      >
+                      <select
+                        id="formType"
+                        class="w-full px-5 py-4 bg-slate-900 border border-white/10 rounded-2xl text-white focus:border-blue-500 focus:outline-none"
+                      >
+                        <option value="">Sélectionnez</option>
+                        <option value="vitrine">Site Vitrine</option>
+                        <option value="restaurant">Site Restaurant</option>
+                        <option value="ecommerce">E-commerce</option>
+                        <option value="refonte">Refonte</option>
+                        <option value="autre">Autre</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-slate-400 text-sm font-medium mb-2"
+                      >Votre message *</label
+                    >
+                    <textarea
+                      id="formMessage"
+                      rows="5"
+                      class="w-full px-5 py-4 bg-slate-900 border border-white/10 rounded-2xl text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none resize-none"
+                      placeholder="Décrivez votre projet..."
+                    ></textarea>
+                  </div>
+                  <button
+                    onclick="submitForm()"
+                    class="w-full py-5 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-bold text-lg rounded-2xl hover:shadow-xl hover:shadow-blue-500/25 transition-all"
+                  >
+                    Envoyer ma demande →
+                  </button>
+                </div>
+                <div id="formSuccess" class="hidden text-center py-16">
+                  <div
+                    class="w-20 h-20 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6"
+                  >
+                    <svg
+                      class="w-10 h-10 text-emerald-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-2xl font-bold text-white mb-3">
+                    Message envoyé !
+                  </h3>
+                  <p class="text-slate-400">
+                    Nous vous répondrons dans les plus brefs délais.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-2 space-y-8">
+              <div>
+                <h2 class="text-3xl font-black text-white mb-8">
+                  Informations
+                </h2>
+                <div class="space-y-6">
+                  <a
+                    href="mailto:nexoraweb.contact@gmail.com"
+                    class="flex items-start gap-4 p-6 bg-slate-950/50 rounded-2xl border border-white/5 hover:border-blue-500/30 transition-all"
+                  >
+                    <div
+                      class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center shrink-0"
+                    >
+                      <svg
+                        class="w-6 h-6 text-blue-400"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-white font-bold mb-1">Email</h3>
+                      <p class="text-blue-400">nexoraweb.contact@gmail.com</p>
+                      <p class="text-slate-500 text-sm mt-1">
+                        Réponse sous 24h
+                      </p>
+                    </div>
+                  </a>
+                  <div
+                    class="flex items-start gap-4 p-6 bg-slate-950/50 rounded-2xl border border-white/5"
+                  >
+                    <div
+                      class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center shrink-0"
+                    >
+                      <svg
+                        class="w-6 h-6 text-blue-400"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-white font-bold mb-1">Zones couvertes</h3>
+                      <p class="text-slate-400">
+                        Lille • Metz • Rouen • Grenoble • Fréjus
+                      </p>
+                      <p class="text-slate-500 text-sm mt-2">
+                        + Toute la France en remote
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-white mb-6">FAQ</h3>
+                <div class="space-y-4">
+                  <div
+                    class="p-5 bg-slate-950/30 rounded-2xl border border-white/5"
+                  >
+                    <h4 class="text-white font-semibold mb-2">
+                      Combien coûte un site web ?
+                    </h4>
+                    <p class="text-slate-400 text-sm">
+                      À partir de 800€ pour un site vitrine.
+                    </p>
+                  </div>
+                  <div
+                    class="p-5 bg-slate-950/30 rounded-2xl border border-white/5"
+                  >
+                    <h4 class="text-white font-semibold mb-2">
+                      Quel est le délai ?
+                    </h4>
+                    <p class="text-slate-400 text-sm">
+                      2-4 semaines en moyenne.
+                    </p>
+                  </div>
+                  <div
+                    class="p-5 bg-slate-950/30 rounded-2xl border border-white/5"
+                  >
+                    <h4 class="text-white font-semibold mb-2">
+                      Proposez-vous la maintenance ?
+                    </h4>
+                    <p class="text-slate-400 text-sm">
+                      Oui, à partir de 50€/mois.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+
+
+  <div id="footer"></div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

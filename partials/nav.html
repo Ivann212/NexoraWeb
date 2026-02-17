@@ -1,0 +1,140 @@
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent" style="background-color: transparent; backdrop-filter: none; border-bottom: none;">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <a
+                href="../index.html"
+                class="flex items-center gap-0.5 cursor-pointer group">
+
+
+                <span
+                class="text-2xl font-black tracking-tight text-white group-hover:text-blue-400 transition-all duration-300"
+                >Nexora</span
+                >
+                <span class="text-2xl font-black tracking-tight text-blue-500"
+                >Web</span
+                >
+                <div
+                class="ml-2 w-2 h-2 bg-blue-500 rounded-full animate-pulse"
+                ></div>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-1" id="desktopNav">
+              <a
+                href="../index.html"
+                class="nav-link px-5 py-2.5 text-sm font-medium rounded-full text-slate-400 hover:text-white hover:bg-white/5 transition-all active"
+                data-page="home"
+              >
+                Accueil
+              </a>
+              <a
+                href="../modeles.html"
+                class="nav-link px-5 py-2.5 text-sm font-medium rounded-full text-slate-400 hover:text-white hover:bg-white/5 transition-all"
+                data-page="realisations"
+              >
+                Modèles
+              </a>
+              <a
+                href="../services.html"
+                class="nav-link px-5 py-2.5 text-sm font-medium rounded-full text-slate-400 hover:text-white hover:bg-white/5 transition-all"
+                data-page="services"
+              >
+                Services
+              </a>
+              <a
+                href="../about.html"
+                class="nav-link px-5 py-2.5 text-sm font-medium rounded-full text-slate-400 hover:text-white hover:bg-white/5 transition-all"
+                data-page="about"
+              >
+                À propos
+              </a>
+              <a
+                href="../contact.html"
+                class="nav-link px-5 py-2.5 text-sm font-medium rounded-full text-slate-400 hover:text-white hover:bg-white/5 transition-all"
+                data-page="contact"
+              >
+                Contact
+              </a>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <a
+                href="../contact.html"
+                class="hidden md:flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-sm font-semibold rounded-full hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 hover:-translate-y-0.5"
+              >
+                <span>Devis gratuit</span>
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
+                </svg>
+              </a>
+              <button
+                id="mobileMenuBtn"
+                class="lg:hidden relative w-10 h-10 flex items-center justify-center"
+                onclick="toggleMobileMenu()"
+              >
+                <div class="w-6 flex flex-col gap-1.5">
+                  <span
+                    id="menuLine1"
+                    class="block h-0.5 w-full bg-white transition-all duration-300"
+                  ></span>
+                  <span
+                    id="menuLine2"
+                    class="block h-0.5 w-full bg-white transition-all duration-300"
+                  ></span>
+                  <span
+                    id="menuLine3"
+                    class="block h-0.5 w-full bg-white transition-all duration-300"
+                  ></span>
+                </div>
+              </button>
+            </div>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="lg:hidden overflow-hidden transition-all duration-500 max-h-0"
+        >
+          <div class="flex flex-col gap-2 pt-4 pb-6 border-t border-white/10">
+            <a
+              href="../index.html"
+              class="text-left px-4 py-3 rounded-xl text-lg font-medium text-slate-400 hover:text-white hover:bg-white/5"
+            >
+              Accueil
+            </a>
+            <button
+              href="../modeles.html"
+              class="text-left px-4 py-3 rounded-xl text-lg font-medium text-slate-400 hover:text-white hover:bg-white/5"
+            >
+              Modèles
+            </button>
+            <button
+              href="../services.html"
+              class="text-left px-4 py-3 rounded-xl text-lg font-medium text-slate-400 hover:text-white hover:bg-white/5"
+            >
+              Services
+            </button>
+            <button
+              href="../about.html"
+              class="text-left px-4 py-3 rounded-xl text-lg font-medium text-slate-400 hover:text-white hover:bg-white/5"
+            >
+              À propos
+            </button>
+            <button
+              href="../contact.html"
+              class="text-left px-4 py-3 rounded-xl text-lg font-medium text-slate-400 hover:text-white hover:bg-white/5"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+    </div>
+</nav>
