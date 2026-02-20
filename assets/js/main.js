@@ -1,14 +1,14 @@
-function loadPartial(id, file) {
-  fetch(file)
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById(id).innerHTML = data;
-    });
+function loadPartial(id, file, callback) {
+    fetch(file)
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById(id).innerHTML = html;
+            if (callback) callback();
+        });
 }
 
-loadPartial("nav", "/partials/nav.html");
+loadPartial("nav", "/partials/nav.html", setActiveNav);
 loadPartial("footer", "/partials/footer.html");
-
 
 var projects = [
           {
@@ -240,6 +240,21 @@ var services = [
     price: "Dès 50€/mois",
   },
 ];
+
+
+
+function setActiveNav() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPath = window.location.pathname.split('/').pop();
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        const linkPath = link.getAttribute('href').split('/').pop();
+        if (linkPath === currentPath) {
+            link.classList.add('active');
+        }
+    });
+}
 
 var mobileMenuOpen = false;
 
