@@ -517,5 +517,24 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
+const emailLinks = [
+              document.querySelector('#email-link'), 
+            ].filter(Boolean);
+
+            const isDesktop = !/Android|iPhone|iPad|iPod/i.test(navigator.userAgent); 
+            
+            if (isDesktop) {
+                emailLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const a = document.createElement('a');
+                        a.href = 'https://mail.google.com/mail/?view=cm&to=nexoraweb.contact@gmail.com';
+                        a.target = '_blank';
+                        a.click();
+                    });
+                });
+            }
+
 // ===== INIT ON LOAD =====
 document.addEventListener("DOMContentLoaded", initGrids);
