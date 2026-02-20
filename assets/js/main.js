@@ -10,98 +10,98 @@ function loadPartial(id, file, callback) {
 loadPartial("nav", "/partials/nav.html", setActiveNav);
 loadPartial("footer", "/partials/footer.html");
 
-// var projects = [
-//           {
-//             id: 1,
-//             type: "Restaurant",
-//             category: "Restaurant",
-//             name: "Modèle Restaurant Gastronomique",
-//             legend: "Concept restauration haut de gamme",
-//             gradient: "from-amber-500 to-orange-600",
-//             desc: "Maquette présentant un design élégant avec menu interactif et système de réservation.",
-//             features: ["Menu digital", "Réservation", "Galerie"],
-//           },
-//           {
-//             id: 2,
-//             type: "Salon & Beauté",
-//             category: "Service",
-//             name: "Modèle Institut Beauté",
-//             legend: "Démonstration salon de coiffure / esthétique",
-//             gradient: "from-rose-500 to-pink-600",
-//             desc: "Concept design premium avec prise de rendez-vous intégrée.",
-//             features: ["Prise de RDV", "Portfolio", "Avis clients"],
-//           },
-//           {
-//             id: 3,
-//             type: "Commerce Alimentaire",
-//             category: "Commerce",
-//             name: "Modèle Boulangerie-Pâtisserie",
-//             legend: "Exemple commerce de bouche",
-//             gradient: "from-yellow-500 to-amber-600",
-//             desc: "Maquette vitrine gourmande avec fonctionnalité click & collect.",
-//             features: ["Click & Collect", "Carte produits", "Commandes"],
-//           },
-//           {
-//             id: 4,
-//             type: "Boutique Luxe",
-//             category: "Commerce",
-//             name: "Modèle E-commerce Premium",
-//             legend: "Concept bijouterie / luxe",
-//             gradient: "from-violet-500 to-purple-700",
-//             desc: "Démonstration boutique en ligne haut de gamme avec configurateur.",
-//             features: ["Boutique", "Configurateur", "Design luxe"],
-//           },
-//           {
-//             id: 5,
-//             type: "Artisan",
-//             category: "Artisan",
-//             name: "Modèle Artisan du Bâtiment",
-//             legend: "Exemple menuisier / ébéniste",
-//             gradient: "from-emerald-500 to-teal-600",
-//             desc: "Concept portfolio artisanal avec demande de devis en ligne.",
-//             features: ["Portfolio", "Devis en ligne", "Galerie travaux"],
-//           },
-//           {
-//             id: 6,
-//             type: "Restauration Rapide",
-//             category: "Restaurant",
-//             name: "Modèle Fast-Food Moderne",
-//             legend: "Démonstration restauration rapide",
-//             gradient: "from-red-500 to-orange-600",
-//             desc: "Maquette commande en ligne fluide et moderne.",
-//             features: ["Click & Collect", "Livraison", "Programme fidélité"],
-//           },
-//           {
-//             id: 7,
-//             type: "Bien-être",
-//             category: "Service",
-//             name: "Modèle Spa & Wellness",
-//             legend: "Concept institut de bien-être",
-//             gradient: "from-teal-400 to-cyan-600",
-//             desc: "Design zen avec système de réservation intégré.",
-//             features: ["Réservation", "Catalogue soins", "Cartes cadeaux"],
-//           },
-//           {
-//             id: 8,
-//             type: "Formation",
-//             category: "Service",
-//             name: "Modèle Centre de Formation",
-//             legend: "Exemple organisme de formation",
-//             gradient: "from-indigo-500 to-blue-700",
-//             desc: "Concept plateforme formation complète.",
-//             features: ["Catalogue formations", "Inscription", "Espace membre"],
-//           },
-//           {
-//             id: 9,
-//             type: "Pizzeria",
-//             category: "Restaurant",
-//             name: "Modèle Pizzeria Italienne",
-//             legend: "Démonstration restaurant italien",
-//             gradient: "from-orange-500 to-red-600",
-//             desc: "Maquette commande intuitive et personnalisable.",
-//             features: ["Personnalisation", "Livraison", "Fidélité"],
-//           },
-//         ];
+var projects = [
+          {
+            id: 1,
+            type: "Restaurant",
+            category: "Restaurant",
+            name: "Modèle Restaurant Gastronomique",
+            legend: "Concept restauration haut de gamme",
+            gradient: "from-amber-500 to-orange-600",
+            desc: "Maquette présentant un design élégant avec menu interactif et système de réservation.",
+            features: ["Menu digital", "Réservation", "Galerie"],
+          },
+          {
+            id: 2,
+            type: "Salon & Beauté",
+            category: "Service",
+            name: "Modèle Institut Beauté",
+            legend: "Démonstration salon de coiffure / esthétique",
+            gradient: "from-rose-500 to-pink-600",
+            desc: "Concept design premium avec prise de rendez-vous intégrée.",
+            features: ["Prise de RDV", "Portfolio", "Avis clients"],
+          },
+          {
+            id: 3,
+            type: "Commerce Alimentaire",
+            category: "Commerce",
+            name: "Modèle Boulangerie-Pâtisserie",
+            legend: "Exemple commerce de bouche",
+            gradient: "from-yellow-500 to-amber-600",
+            desc: "Maquette vitrine gourmande avec fonctionnalité click & collect.",
+            features: ["Click & Collect", "Carte produits", "Commandes"],
+          },
+          {
+            id: 4,
+            type: "Boutique Luxe",
+            category: "Commerce",
+            name: "Modèle E-commerce Premium",
+            legend: "Concept bijouterie / luxe",
+            gradient: "from-violet-500 to-purple-700",
+            desc: "Démonstration boutique en ligne haut de gamme avec configurateur.",
+            features: ["Boutique", "Configurateur", "Design luxe"],
+          },
+          {
+            id: 5,
+            type: "Artisan",
+            category: "Artisan",
+            name: "Modèle Artisan du Bâtiment",
+            legend: "Exemple menuisier / ébéniste",
+            gradient: "from-emerald-500 to-teal-600",
+            desc: "Concept portfolio artisanal avec demande de devis en ligne.",
+            features: ["Portfolio", "Devis en ligne", "Galerie travaux"],
+          },
+          {
+            id: 6,
+            type: "Restauration Rapide",
+            category: "Restaurant",
+            name: "Modèle Fast-Food Moderne",
+            legend: "Démonstration restauration rapide",
+            gradient: "from-red-500 to-orange-600",
+            desc: "Maquette commande en ligne fluide et moderne.",
+            features: ["Click & Collect", "Livraison", "Programme fidélité"],
+          },
+          {
+            id: 7,
+            type: "Bien-être",
+            category: "Service",
+            name: "Modèle Spa & Wellness",
+            legend: "Concept institut de bien-être",
+            gradient: "from-teal-400 to-cyan-600",
+            desc: "Design zen avec système de réservation intégré.",
+            features: ["Réservation", "Catalogue soins", "Cartes cadeaux"],
+          },
+          {
+            id: 8,
+            type: "Formation",
+            category: "Service",
+            name: "Modèle Centre de Formation",
+            legend: "Exemple organisme de formation",
+            gradient: "from-indigo-500 to-blue-700",
+            desc: "Concept plateforme formation complète.",
+            features: ["Catalogue formations", "Inscription", "Espace membre"],
+          },
+          {
+            id: 9,
+            type: "Pizzeria",
+            category: "Restaurant",
+            name: "Modèle Pizzeria Italienne",
+            legend: "Démonstration restaurant italien",
+            gradient: "from-orange-500 to-red-600",
+            desc: "Maquette commande intuitive et personnalisable.",
+            features: ["Personnalisation", "Livraison", "Fidélité"],
+          },
+        ];
 
 // var testimonials = [
 //   {
@@ -260,66 +260,66 @@ var mobileMenuOpen = false;
 
 
 
-// function renderProjectCard(project) {
-//   var featuresHtml = "";
-//   for (var i = 0; i < project.features.length; i++) {
-//     featuresHtml +=
-//       '<span class="px-2 py-0.5 bg-white/10 rounded-full text-[10px] text-white">' +
-//       project.features[i] +
-//       "</span>";
-//   }
-//   return (
-//       '<div class="group cursor-pointer project-card" data-category="' +
-//       project.category +
-//       '">' +
-//       '<div class="relative h-64 bg-gradient-to-br ' +
-//       project.gradient +
-//       '/20 rounded-2xl overflow-hidden border border-white/5 hover:border-white/20 transition-all duration-300">' +
-//       '<div class="absolute inset-4 bg-slate-900/95 rounded-xl overflow-hidden border border-white/5">' +
-//       '<div class="h-6 bg-slate-800 flex items-center px-2 gap-1">' +
-//       '<div class="w-1.5 h-1.5 rounded-full bg-red-500"></div>' +
-//       '<div class="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>' +
-//       '<div class="w-1.5 h-1.5 rounded-full bg-green-500"></div>' +
-//       '<span class="ml-2 text-[9px] text-slate-500">demo-nexoraweb.fr</span>' +
-//       "</div>" +
-//       '<div class="p-3">' +
-//       '<div class="w-full h-3 bg-gradient-to-r ' +
-//       project.gradient +
-//       '/30 rounded mb-2"></div>' +
-//       '<div class="w-3/4 h-2 bg-slate-700/50 rounded mb-1"></div>' +
-//       '<div class="w-1/2 h-2 bg-slate-700/30 rounded mb-2"></div>' +
-//       '<div class="grid grid-cols-2 gap-2"><div class="h-16 bg-slate-800 rounded"></div><div class="h-16 bg-slate-800/60 rounded"></div></div>' +
-//       "</div>" +
-//       "</div>" +
-//       '<div class="project-overlay absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent flex flex-col justify-end p-5 opacity-0 transition-opacity duration-300">' +
-//       '<p class="text-sm text-slate-300 mb-2">' +
-//       project.desc +
-//       "</p>" +
-//       '<div class="flex flex-wrap gap-1 mb-3">' +
-//       featuresHtml +
-//       "</div>" +
-//       '<span class="text-white text-sm font-medium">Découvrir ce modèle →</span>' +
-//       "</div>" +
-//       "</div>" +
-//       '<div class="mt-4">' +
-//       '<div class="flex items-center justify-between mb-1">' +
-//       '<span class="text-xs font-medium bg-gradient-to-r ' +
-//       project.gradient +
-//       ' bg-clip-text text-transparent">' +
-//       project.type +
-//       "</span>" +
-//       '<span class="text-slate-500 text-[10px] uppercase tracking-wide">Maquette</span>' +
-//       "</div>" +
-//       '<h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">' +
-//       project.name +
-//       "</h3>" +
-//       '<p class="text-slate-500 text-xs mt-1">' +
-//       project.legend +
-//       "</p>" +
-//       "</div>" +
-//       "</div>"
-//   );
-// }
+function renderProjectCard(project) {
+  var featuresHtml = "";
+  for (var i = 0; i < project.features.length; i++) {
+    featuresHtml +=
+      '<span class="px-2 py-0.5 bg-white/10 rounded-full text-[10px] text-white">' +
+      project.features[i] +
+      "</span>";
+  }
+  return (
+      '<div class="group cursor-pointer project-card" data-category="' +
+        project.category +
+      '">' +
+      '<div class="relative h-64 bg-gradient-to-br ' +
+        project.gradient +
+      '/20 rounded-2xl overflow-hidden border border-white/5 hover:border-white/20 transition-all duration-300">' +
+      '<div class="absolute inset-4 bg-slate-900/95 rounded-xl overflow-hidden border border-white/5">' +
+      '<div class="h-6 bg-slate-800 flex items-center px-2 gap-1">' +
+      '<div class="w-1.5 h-1.5 rounded-full bg-red-500"></div>' +
+      '<div class="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>' +
+      '<div class="w-1.5 h-1.5 rounded-full bg-green-500"></div>' +
+      '<span class="ml-2 text-[9px] text-slate-500">demo-nexoraweb.fr</span>' +
+      "</div>" +
+      '<div class="p-3">' +
+      '<div class="w-full h-3 bg-gradient-to-r ' +
+        project.gradient +
+      '/30 rounded mb-2"></div>' +
+      '<div class="w-3/4 h-2 bg-slate-700/50 rounded mb-1"></div>' +
+      '<div class="w-1/2 h-2 bg-slate-700/30 rounded mb-2"></div>' +
+      '<div class="grid grid-cols-2 gap-2"><div class="h-16 bg-slate-800 rounded"></div><div class="h-16 bg-slate-800/60 rounded"></div></div>' +
+      "</div>" +
+      "</div>" +
+      '<div class="project-overlay absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent flex flex-col justify-end p-5 opacity-0 transition-opacity duration-300">' +
+      '<p class="text-sm text-slate-300 mb-2">' +
+        project.desc +
+      "</p>" +
+      '<div class="flex flex-wrap gap-1 mb-3">' +
+        featuresHtml +
+      "</div>" +
+      '<span class="text-white text-sm font-medium">Découvrir ce modèle →</span>' +
+      "</div>" +
+      "</div>" +
+      '<div class="mt-4">' +
+      '<div class="flex items-center justify-between mb-1">' +
+      '<span class="text-xs font-medium bg-gradient-to-r ' +
+        project.gradient +
+      ' bg-clip-text text-transparent">' +
+        project.type +
+      "</span>" +
+      '<span class="text-slate-500 text-[10px] uppercase tracking-wide">Maquette</span>' +
+      "</div>" +
+      '<h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">' +
+        project.name +
+      "</h3>" +
+      '<p class="text-slate-500 text-xs mt-1">' +
+        project.legend +
+      "</p>" +
+      "</div>" +
+      "</div>"
+  );
+}
 
 // function renderTestimonial(t) {
 //   return (
@@ -417,46 +417,26 @@ var mobileMenuOpen = false;
 // }
 
 // ===== INITIALIZE =====
+
+
 function initGrids() {
-  var homeGrid = document.getElementById("homeProjectsGrid");
-  var realGrid = document.getElementById("realisationsGrid");
-  var testGrid = document.getElementById("testimonialsGrid");
-  var servGrid = document.getElementById("servicesDetailGrid");
+    var homeGrid = document.getElementById("homeProjectsGrid");
+    var realGrid = document.getElementById("realisationsGrid");
 
-  if (homeGrid) {
-    var homeHtml = "";
-    for (var i = 0; i < 6 && i < projects.length; i++) {
-      homeHtml += renderProjectCard(projects[i]);
+    if (homeGrid) {
+        var homeHtml = "";
+        for (var i = 0; i < 6 && i < projects.length; i++) {
+            homeHtml += renderProjectCard(projects[i]);
+        }
+        homeGrid.innerHTML = homeHtml;
     }
-    homeGrid.innerHTML = homeHtml;
-  }
 
-  if (realGrid) {
-    var realHtml = "";
-    for (var j = 0; j < projects.length; j++) {
-      realHtml += renderProjectCard(projects[j]);
+    if (realGrid) {
+        filterProjects("Tous");
     }
-    realGrid.innerHTML = realHtml;
-  }
-
-  if (testGrid) {
-    var testHtml = "";
-    for (var k = 0; k < testimonials.length; k++) {
-      testHtml += renderTestimonial(testimonials[k]);
-    }
-    testGrid.innerHTML = testHtml;
-  }
-
-  if (servGrid) {
-    var servHtml = "";
-    for (var l = 0; l < services.length; l++) {
-      servHtml += renderServiceDetail(services[l], l);
-    }
-    servGrid.innerHTML = servHtml;
-  }
 }
 
-// ===== PAGE NAVIGATION =====
+
 
 
 // ===== FILTER PROJECTS =====
