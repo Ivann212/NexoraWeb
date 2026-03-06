@@ -7,8 +7,8 @@ function loadPartial(id, file, callback) {
         });
 }
 
-loadPartial("nav", "./partials/nav.html", setActiveNav);
-loadPartial("footer", "./partials/footer.html");
+loadPartial("nav", "/NexoraWeb/partials/nav.html", setActiveNav);
+loadPartial("footer", "/NexoraWeb/partials/footer.html");
 
 var projects = [
           {
